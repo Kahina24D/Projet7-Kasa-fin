@@ -31,3 +31,24 @@
         z-index: 1; // Assurez-vous que le texte est au-dessus de la superposition
     }
 }
+
+@media screen and (max-width: 768px) {
+    .banner-text {
+      color: red;
+        font-size: 24px;
+       
+    }
+  
+    
+  }
+
+  @media screen and (max-width: 480px) {
+    .banner-img {
+        .banner-text {
+      
+            font-size: 30px;
+           
+        }
+    }
+  
+  }

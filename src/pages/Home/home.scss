@@ -26,3 +26,28 @@
 
     }
 }
+
+@media screen and (max-width: 768px) {
+    .gallery-container {
+      padding: 20px; /* Reduced padding on mobile */
+      margin: 1rem;  /* Slightly less margin on mobile */
+    }
+  
+    .gallery-container .logements-gallery {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets and smaller screens */
+      gap: 30px; /* Smaller gap between items */
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .gallery-container {
+      padding: 0px; /* Reduced padding on mobile */
+      margin: 0rem;  /* Slightly less margin on mobile */
+    
+    }
+  
+    .gallery-container .logements-gallery {
+      grid-template-columns: repeat(1, 1fr); /* 2 columns on tablets and smaller screens */
+      gap: 30px; /* Smaller gap between items */
+    }
+  }
