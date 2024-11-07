@@ -1,0 +1,42 @@
+@charset "UTF-8";
+.logement-page {
+  position: relative;
+}
+
+.logement-pictures {
+  position: relative;
+}
+
+.logement-picture {
+  width: 100%;
+  height: 400px; /* Ajustez la hauteur à votre convenance, par exemple 40% ou une valeur fixe comme 300px */
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow-left {
+  left: 10px; /* Ajustez la position à gauche */
+}
+
+.arrow-right {
+  right: 10px; /* Ajustez la position à droite */
+}
+
+.slide-picture {
+  position: absolute;
+  bottom: 10px; /* Positionnez le texte en bas */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white; /* Couleur du texte */
+  padding: 5px 10px; /* Espacement autour du texte */
+  border-radius: 5px; /* Coins arrondis */
+}/*# sourceMappingURL=carrossale.css.map */

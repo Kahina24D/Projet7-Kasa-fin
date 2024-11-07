@@ -1,0 +1,46 @@
+.collapse {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 1rem 0;
+  
+    .collapse-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      padding: 1rem;
+      background-color:  var(--colorRed);
+      font-weight: bold;
+  
+      h2 {
+        margin: 0;
+        color: #fff;
+      }
+  
+      .toggle-arrow {
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+      }
+  
+      .arrow.expanded {
+        transform: rotate(180deg); // Fait tourner la flèche quand le contenu est affiché
+      }
+    }
+  
+    .collapse-content {
+      padding: 1rem;
+      background-color: #fafafa;
+      animation: fadeIn 0.4s ease-in-out;
+    }
+  
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+  

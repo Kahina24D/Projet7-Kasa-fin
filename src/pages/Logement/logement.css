@@ -1,0 +1,119 @@
+/* logment.scss */
+.style-logement {
+  display: flex;
+  flex-direction: column;
+}
+.style-logement .container-logement {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.style-logement .container-logement .item1-logement h1 {
+  color: #ff6060;
+}
+.style-logement .container-logement .item1-logement,
+.style-logement .container-logement .item-logement,
+.style-logement .container-logement .item2-logement,
+.style-logement .container-logement .item3-logement {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem;
+}
+.style-logement .container-logement .item1-logement .equipement-logement, .style-logement .container-logement .item1-logement .descreption-logement,
+.style-logement .container-logement .item-logement .equipement-logement,
+.style-logement .container-logement .item-logement .descreption-logement,
+.style-logement .container-logement .item2-logement .equipement-logement,
+.style-logement .container-logement .item2-logement .descreption-logement,
+.style-logement .container-logement .item3-logement .equipement-logement,
+.style-logement .container-logement .item3-logement .descreption-logement {
+  width: 500px;
+}
+.style-logement .container-logement .item1-logement .equipement-logement .equipement-header, .style-logement .container-logement .item1-logement .equipement-logement .descreption-header, .style-logement .container-logement .item1-logement .descreption-logement .equipement-header, .style-logement .container-logement .item1-logement .descreption-logement .descreption-header,
+.style-logement .container-logement .item-logement .equipement-logement .equipement-header,
+.style-logement .container-logement .item-logement .equipement-logement .descreption-header,
+.style-logement .container-logement .item-logement .descreption-logement .equipement-header,
+.style-logement .container-logement .item-logement .descreption-logement .descreption-header,
+.style-logement .container-logement .item2-logement .equipement-logement .equipement-header,
+.style-logement .container-logement .item2-logement .equipement-logement .descreption-header,
+.style-logement .container-logement .item2-logement .descreption-logement .equipement-header,
+.style-logement .container-logement .item2-logement .descreption-logement .descreption-header,
+.style-logement .container-logement .item3-logement .equipement-logement .equipement-header,
+.style-logement .container-logement .item3-logement .equipement-logement .descreption-header,
+.style-logement .container-logement .item3-logement .descreption-logement .equipement-header,
+.style-logement .container-logement .item3-logement .descreption-logement .descreption-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  background-color: #ff6060;
+}
+.style-logement .container-logement .item1-logement .equipement-logement .equipement-header h1, .style-logement .container-logement .item1-logement .equipement-logement .descreption-header h1, .style-logement .container-logement .item1-logement .descreption-logement .equipement-header h1, .style-logement .container-logement .item1-logement .descreption-logement .descreption-header h1,
+.style-logement .container-logement .item-logement .equipement-logement .equipement-header h1,
+.style-logement .container-logement .item-logement .equipement-logement .descreption-header h1,
+.style-logement .container-logement .item-logement .descreption-logement .equipement-header h1,
+.style-logement .container-logement .item-logement .descreption-logement .descreption-header h1,
+.style-logement .container-logement .item2-logement .equipement-logement .equipement-header h1,
+.style-logement .container-logement .item2-logement .equipement-logement .descreption-header h1,
+.style-logement .container-logement .item2-logement .descreption-logement .equipement-header h1,
+.style-logement .container-logement .item2-logement .descreption-logement .descreption-header h1,
+.style-logement .container-logement .item3-logement .equipement-logement .equipement-header h1,
+.style-logement .container-logement .item3-logement .equipement-logement .descreption-header h1,
+.style-logement .container-logement .item3-logement .descreption-logement .equipement-header h1,
+.style-logement .container-logement .item3-logement .descreption-logement .descreption-header h1 {
+  color: #fff;
+  font-size: 18px;
+}
+.style-logement .container-logement .item1-logement .equipement-logement .text-descreption, .style-logement .container-logement .item1-logement .descreption-logement .text-descreption,
+.style-logement .container-logement .item-logement .equipement-logement .text-descreption,
+.style-logement .container-logement .item-logement .descreption-logement .text-descreption,
+.style-logement .container-logement .item2-logement .equipement-logement .text-descreption,
+.style-logement .container-logement .item2-logement .descreption-logement .text-descreption,
+.style-logement .container-logement .item3-logement .equipement-logement .text-descreption,
+.style-logement .container-logement .item3-logement .descreption-logement .text-descreption {
+  padding-top: 0;
+  margin-top: 0;
+  line-height: 2.5;
+  background-color: #fbf5f5;
+  padding: 0.5rem;
+}
+.style-logement .container-logement .item1-logement .liste-equipement,
+.style-logement .container-logement .item-logement .liste-equipement,
+.style-logement .container-logement .item2-logement .liste-equipement,
+.style-logement .container-logement .item3-logement .liste-equipement {
+  background-color: #fbf5f5;
+  padding: 0.5rem;
+}
+.style-logement .container-logement .item1-logement .liste-equipement P,
+.style-logement .container-logement .item-logement .liste-equipement P,
+.style-logement .container-logement .item2-logement .liste-equipement P,
+.style-logement .container-logement .item3-logement .liste-equipement P {
+  padding-top: 0;
+  margin-top: 0;
+}
+.style-logement .container-logement .host-logement {
+  display: flex;
+  color: #ff6060;
+}
+.style-logement .container-logement .tage-logement {
+  display: flex;
+  gap: 10px;
+  color: #ff6060;
+}
+.style-logement .container-logement .tage-logement .text-tag {
+  background-color: #ff6060;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 15px;
+}
+.style-logement .container-logement .tage-logement img {
+  width: 60px;
+  height: 60px;
+}
+.style-logement .container-logement .item1-logement, .style-logement .container-logement .item-logement, .style-logement .container-logement .item2-logement, .style-logement .container-logement .item3-logement {
+  margin-bottom: -10px;
+}/*# sourceMappingURL=logement.css.map */

@@ -1,0 +1,26 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+}
+header img.logo-header {
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  margin: 0 10px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+}/*# sourceMappingURL=header.css.map */

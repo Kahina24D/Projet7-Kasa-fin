@@ -1,0 +1,102 @@
+/* logment.scss */
+.style-logement {
+    display: flex;
+    flex-direction: column;
+
+    .container-logement {
+      display: flex;
+      flex-direction: column;
+      .item1-logement{
+        h1{
+            color:#ff6060;
+        }
+   
+      }
+     ;
+      padding: 2rem;
+      .item1-logement,
+      .item-logement,
+      .item2-logement,
+      .item3-logement {
+        display: flex;
+        justify-content: space-between;
+       padding: 0.3rem;
+      .equipement-logement,.descreption-logement{
+        width: 500px;
+     
+       
+       .equipement-header, .descreption-header{
+            display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    cursor: pointer;
+                    padding: 0.5rem;
+                    user-select: none;
+                    background-color: #ff6060;
+                 
+                  
+                    h1{
+                        color: #fff;
+                        font-size: 18px;
+                    }
+                   
+        }
+       .text-descreption {
+            padding-top: 0;
+            margin-top: 0;
+           
+            line-height: 2.5;
+            background-color: #fbf5f5;
+            padding: 0.5rem;
+         
+           }
+       }
+       .liste-equipement {
+      
+        background-color: #fbf5f5;
+        padding: 0.5rem;
+       
+           & P{
+
+padding-top: 0;
+margin-top: 0;
+
+
+
+          }
+       }
+
+      }
+  
+      .host-logement{
+        display: flex;
+      
+        color: #ff6060;
+      }
+      .tage-logement {
+        display: flex;
+        gap: 10px;
+    color: #ff6060;
+ 
+
+         .text-tag{
+            background-color: #ff6060;
+            color: #fff;
+            border-radius: 10px;
+            padding: 0.5rem;
+            font-size: 15px;
+        }
+        
+      img{
+            width: 60px;
+            height: 60px;
+        }
+      }
+      .item1-logement,.item-logement ,.item2-logement, .item3-logement {
+        margin-bottom: -10px; // Réduit l'espace en bas de chaque item
+        // Si vous souhaitez réduire l'espace en haut
+        // margin-top: 5px; 
+      }
+    }
+  }
+  

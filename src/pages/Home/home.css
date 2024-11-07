@@ -1,0 +1,24 @@
+:root {
+  --colorRed: #FF6060;
+  --colorWhite: #fff;
+}
+
+.gallery-container {
+  position: relative;
+  background-color: #F6F6F6;
+  padding: 40px 0;
+  /* Espace autour de la galerie */
+  display: flex;
+  justify-content: center;
+  /* Centre la galerie horizontalement */
+  margin: 1.5rem;
+  border-radius: 25px;
+}
+.gallery-container .logements-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 15px;
+}/*# sourceMappingURL=home.css.map */
