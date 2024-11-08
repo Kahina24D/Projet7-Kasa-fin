@@ -1,7 +1,3 @@
-// Home.jsx
-
-
-
 import "./home.scss";
 import "../../components/Cadre/cadre.scss";
 import Card from "../../components/Cadre/Card";
@@ -14,18 +10,15 @@ function Home() {
   return (
     <div>
       <Header />
-      <Banner  src="banner.png" title={"Chez vous, partout et ailleurs"}/>
+      <Banner src="banner.png" title="Chez vous, partout et ailleurs" />
       <div className="gallery-container">
         <div className="logements-gallery">
           {logements.map((logement) => (
-            <Card
-              key={logement.id}
-              logement={logement} // Passez l'objet logement ici
-            />
+            <Card key={logement.id} logement={logement} />
           ))}
         </div>
       </div>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }

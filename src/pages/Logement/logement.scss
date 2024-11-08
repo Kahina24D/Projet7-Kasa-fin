@@ -13,7 +13,7 @@
    
       }
      ;
-      padding: 1rem;
+    
       .item1-logement,
       .item-logement,
       .item2-logement,
@@ -59,14 +59,14 @@
        
            & P{
 
-padding-top: 0;
-margin-top: 0;
+                  padding-top: 0;
+                    margin-top: 0;
 
 
 
           }
        }
-
+      
       }
    .item2-logement{
     .etoile-logement{
@@ -107,15 +107,26 @@ margin-top: 0;
         // Si vous souhaitez réduire l'espace en haut
         // margin-top: 5px; 
       }
+      padding: 2rem;
     }
   }
-  
+  // @media screen and (max-width: 768px) {
+  //   .style-logement {
+   
 
-  @media screen and (max-width: 480px) {
+  //     .container-logement{
+  //      background-color: red;
+     
+  //     }
+  //   }
+   
+  // }
+
+  @media screen and (max-width: 1120px) {
     .style-logement {
       display: flex;
       flex-direction: column;
-         padding: 0rem;
+       
       .container-logement {
        display: flex;
        flex-direction: column;
@@ -158,7 +169,7 @@ margin-top: 0;
         }
        
        }
-      
+      padding: 1rem;
       }
     }
   }
