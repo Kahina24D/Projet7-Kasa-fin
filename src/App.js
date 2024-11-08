@@ -10,6 +10,7 @@ function App() {
     <Layout>
       <Router>
         <Routes>
+        <Route path="/" element={<Home />} /> {/* Ajoute une route par défaut pour la page d'accueil */}
           <Route path="/home" element={<Home />} />
           <Route path="/apropos" element={<Apropos />} />
           <Route path="/logement/:id" element={<Logement />} />

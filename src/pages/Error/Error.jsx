@@ -9,7 +9,7 @@ function Error() {
       <Header />
      <div className="item-error"><img src="404@2x.png" alt="imageerror" /></div> 
 
-  
+   
       
             <Link to="/home" className="link-home">Retourner sur la page d’accueil</Link>
           
