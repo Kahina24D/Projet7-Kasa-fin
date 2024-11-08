@@ -13,21 +13,22 @@
    
       }
      ;
-      padding: 2rem;
+      padding: 1rem;
       .item1-logement,
       .item-logement,
       .item2-logement,
+      
       .item3-logement {
         display: flex;
         justify-content: space-between;
-       padding: 0.3rem;
+      
       .equipement-logement,.descreption-logement{
         width: 500px;
      
        
        .equipement-header, .descreption-header{
-            display: flex;
-                    align-items: center;
+         display: flex;
+          align-items: center;
                     justify-content: space-between;
                     cursor: pointer;
                     padding: 0.5rem;
@@ -67,16 +68,25 @@ margin-top: 0;
        }
 
       }
-  
+   .item2-logement{
+    .etoile-logement{
+      .host-logement-hidden{
+        display: none;
+      }
+    
+    
+    }
+   }
       .host-logement{
         display: flex;
       
         color: #ff6060;
+      
       }
       .tage-logement {
         display: flex;
         gap: 10px;
-    color: #ff6060;
+        color: #ff6060;
  
 
          .text-tag{
@@ -100,3 +110,55 @@ margin-top: 0;
     }
   }
   
+
+  @media screen and (max-width: 480px) {
+    .style-logement {
+      display: flex;
+      flex-direction: column;
+         padding: 0rem;
+      .container-logement {
+       display: flex;
+       flex-direction: column;
+           gap: 1rem;
+       .item1-logement{
+        display: flex;
+        flex-direction: column; 
+        .host-logement{
+            display: none;
+          }
+       
+       }
+       .item2-logement{
+        display: flex;
+        flex-direction: column;
+        .etoile-logement{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .host-logement-hidden{
+            display: flex;
+            gap: 10px;
+        & p{
+          color: #ff6060;
+        }
+            
+          }
+         
+        
+        
+        }
+       }
+       .item3-logement{
+        display: flex;
+        flex-direction: column;
+       gap: 1.5rem;
+       padding-bottom: 1rem;
+        .equipement-logement,.descreption-logement{
+          width: 100%;
+        }
+       
+       }
+      
+      }
+    }
+  }

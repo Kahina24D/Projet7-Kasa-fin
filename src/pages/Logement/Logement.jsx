@@ -65,7 +65,13 @@ function Logement() {
               )}
             </div>
             <div className="etoile-logement">
-              <Starrating />
+             <div><Starrating /></div> 
+             <div className="host-logement-hidden">
+               <p>{logement.host.name}</p>
+             <img src={Logohost} alt="logo-host" />
+               </div>
+
+
             </div>
 </div>
    <div className="item3-logement">
