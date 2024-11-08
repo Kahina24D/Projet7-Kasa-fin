@@ -9,6 +9,7 @@
       .item1-logement{
         h1{
             color:#ff6060;
+           
         }
    
       }
@@ -81,7 +82,12 @@
         display: flex;
       
         color: #ff6060;
-      
+         margin-top: 1.5rem;
+   
+      .name-host{
+        width: 60px;
+
+      }
       }
       .tage-logement {
         display: flex;
@@ -103,11 +109,9 @@
         }
       }
       .item1-logement,.item-logement ,.item2-logement, .item3-logement {
-        margin-bottom: -10px; // Réduit l'espace en bas de chaque item
-        // Si vous souhaitez réduire l'espace en haut
-        // margin-top: 5px; 
+       
       }
-      padding: 2rem;
+      padding: 1.5rem;
     }
   }
   
@@ -138,7 +142,10 @@
           align-items: center;
           .host-logement-hidden{
             display: flex;
-            gap: 10px;
+           
+            .name-host{
+              width: 55px;
+            }
         & p{
           color: #ff6060;
         }
@@ -152,7 +159,7 @@
        .item3-logement{
         display: flex;
         flex-direction: column;
-       gap: 1.5rem;
+       gap: 0.5rem;
        padding-bottom: 1rem;
         .equipement-logement,.descreption-logement{
           width: 100%;

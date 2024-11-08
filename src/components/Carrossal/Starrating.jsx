@@ -1,10 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaStar } from "react-icons/fa";
 
-export default function Starrating() {
-  const [rating, setRating] = useState(0);
-  const [hover, setHover] = useState(0);
-
+export default function Starrating({ rating = 0 }) { // Valeur par défaut de 0 pour rating
   return (
     <div style={{ display: "flex", cursor: "pointer" }}>
       {[...Array(5)].map((_, index) => {
@@ -12,11 +9,8 @@ export default function Starrating() {
         return (
           <label key={index}>
             <FaStar
-              size={24}
-              color={currentRate <= (hover || rating) ? "#ff6060" : "gray"}
-              onClick={() => setRating(currentRate)}
-              onMouseEnter={() => setHover(currentRate)}
-              onMouseLeave={() => setRating(0)}
+              size={20}
+              color={currentRate <= rating ? "#ff6060" : "gray"}
             />
           </label>
         );
