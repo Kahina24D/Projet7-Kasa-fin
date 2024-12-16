@@ -74,7 +74,7 @@
     }
     .host-logement {
       display: flex;
-
+gap: 0.5rem;
       color: #ff6060;
       margin-top: 1.5rem;
 
@@ -128,7 +128,7 @@
           align-items: center;
           .host-logement-hidden {
             display: flex;
-  
+  gap: 0.8rem;
 
             .name-host {
               width: 55px;
