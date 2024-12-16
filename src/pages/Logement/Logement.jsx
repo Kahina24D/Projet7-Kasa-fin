@@ -36,33 +36,31 @@ function Logement() {
           <div className="item1-logement">
             <div className="logementtitle">
               <h1>{logement.title}</h1>
+              <p>{logement.location}</p>
             </div>
-
+            
             <div className="host-logement">
-            <p className="name-host">
-                  {logement.host
-                    ? logement.host.name
-                    : "Nom de l'hôte non disponible"}
-                </p>
-                {logement.host && logement.host.picture ? (
-                  <img src={logement.host.picture} 
+              <p className="name-host">
+                {logement.host
+                  ? logement.host.name
+                  : "Nom de l'hôte non disponible"}
+              </p>
+              {logement.host && logement.host.picture ? (
+                <img
+                  src={logement.host.picture}
                   alt="logo-host"
                   style={{
-                    borderRadius: '50%', 
-                   width: '64px',
-                   height: '64px',
-                 
-                  }} 
-                   />
-                ) : (
-                  <p>Image non disponible</p>
-                )}
-                
+                    borderRadius: '50%',
+                    width: '64px',
+                    height: '64px',
+                  }}
+                />
+              ) : (
+                <p>Image non disponible</p>
+              )}
             </div>
           </div>
-          <div className="item-logement">
-            <p>{logement.location}</p>
-          </div>
+
           <div className="item2-logement">
             <div className="tage-logement">
               {logement.tags && logement.tags.length > 0 ? (
@@ -86,14 +84,14 @@ function Logement() {
                     : "Nom de l'hôte non disponible"}
                 </p>
                 {logement.host && logement.host.picture ? (
-                  <img 
-                  src={logement.host.picture} 
-                  alt="logo-host" 
-                  style={{
-                    borderRadius: '50%', 
-                   width: '60px',
-                   height: '60px'
-                  }} 
+                  <img
+                    src={logement.host.picture}
+                    alt="logo-host"
+                    style={{
+                      borderRadius: '50%',
+                      width: '60px',
+                      height: '60px',
+                    }}
                   />
                 ) : (
                   <p>Image non disponible</p>

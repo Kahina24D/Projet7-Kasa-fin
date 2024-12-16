@@ -1,26 +1,28 @@
 .collapse {
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 10px;
     overflow: hidden;
-    margin: 1rem 0;
+
   
     .collapse-header {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       cursor: pointer;
-      padding: 1rem;
-      background-color:  var(--colorRed);
-      font-weight: bold;
+     
+      user-select: none;
+      background-color: #ff6060;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
   
       h2 {
-        margin: 0;
         color: #fff;
+            font-size: 18px;
       }
   
       .toggle-arrow {
-        font-size: 1.5rem;
-        transition: transform 0.3s ease;
+        width: 20px;
+        height: 10px;
       }
   
       .arrow.expanded {
@@ -33,14 +35,6 @@
       background-color: #fafafa;
       animation: fadeIn 0.4s ease-in-out;
     }
-  
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
+
   }
   

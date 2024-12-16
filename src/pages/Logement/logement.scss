@@ -1,172 +1,155 @@
 /* logment.scss */
 .style-logement {
+  display: flex;
+  flex-direction: column;
+
+  .container-logement {
+    display: flex;
+    flex-direction: column;
+    .item1-logement {
+      display: flex;
+
+      h1 {
+        color: #ff6060;
+        font-family: Montserrat;
+        font-weight: 500;
+      }
+    }
+    .item1-logement,
+    .item-logement,
+    .item2-logement,
+    .item3-logement {
+      display: flex;
+      justify-content: space-between;
+
+      .equipement-logement,
+      .descreption-logement {
+        width: 500px;
+
+        .equipement-header,
+        .descreption-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          cursor: pointer;
+          border-radius: 10px;
+          user-select: none;
+          background-color: #ff6060;
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
+          h1 {
+            color: #fff;
+            font-size: 18px;
+          }
+          img {
+            width: 20px;
+            height: 10px;
+          }
+        }
+        .text-descreption {
+          padding-top: 0;
+          margin-top: 0;
+
+          line-height: 2.5;
+          background-color: #fbf5f5;
+          padding: 0.5rem;
+        }
+      }
+      .liste-equipement {
+        background-color: #fbf5f5;
+        padding: 0.5rem;
+
+        & P {
+          padding-top: 0;
+          margin-top: 0;
+        }
+      }
+    }
+    .item2-logement {
+      .etoile-logement {
+        .host-logement-hidden {
+          display: none;
+        }
+      }
+    }
+    .host-logement {
+      display: flex;
+gap: 1rem;
+      color: #ff6060;
+      margin-top: 1.5rem;
+
+      .name-host {
+        width: 60px;
+      }
+    }
+    .tage-logement {
+      display: flex;
+        gap: 10px;
+        color: #ff6060;
+
+      .text-tag {
+        background-color: #ff6060;
+          color: #fff;
+          border-radius: 10px;
+          width: 135px;
+          height: 25px;
+          text-align: center;
+          font-size: 15px;
+      }
+
+    }
+
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .style-logement {
     display: flex;
     flex-direction: column;
 
     .container-logement {
       display: flex;
       flex-direction: column;
-      .item1-logement{
-        h1{
-            color:#ff6060;
-           
-        }
-   
-      }
-     ;
-    
-      .item1-logement,
-      .item-logement,
-      .item2-logement,
-      
-      .item3-logement {
-        display: flex;
-        justify-content: space-between;
-      
-      .equipement-logement,.descreption-logement{
-        width: 500px;
-     
-       
-       .equipement-header, .descreption-header{
-         display: flex;
-          align-items: center;
-                    justify-content: space-between;
-                    cursor: pointer;
-                    padding: 0.5rem;
-                    user-select: none;
-                    background-color: #ff6060;
-                 
-                  
-                    h1{
-                        color: #fff;
-                        font-size: 18px;
-                    }
-                   
-        }
-       .text-descreption {
-            padding-top: 0;
-            margin-top: 0;
-           
-            line-height: 2.5;
-            background-color: #fbf5f5;
-            padding: 0.5rem;
-         
-           }
-       }
-       .liste-equipement {
-      
-        background-color: #fbf5f5;
-        padding: 0.5rem;
-       
-           & P{
 
-                  padding-top: 0;
-                    margin-top: 0;
-
-
-
-          }
-       }
-      
-      }
-   .item2-logement{
-    .etoile-logement{
-      .host-logement-hidden{
-        display: none;
-      }
-    
-    
-    }
-   }
-      .host-logement{
-        display: flex;
-      
-        color: #ff6060;
-         margin-top: 1.5rem;
-   
-      .name-host{
-        width: 60px;
-
-      }
-      }
-      .tage-logement {
-        display: flex;
-        gap: 10px;
-        color: #ff6060;
- 
-
-         .text-tag{
-            background-color: #ff6060;
-            color: #fff;
-            border-radius: 10px;
-            padding: 0.5rem;
-            font-size: 15px;
-        }
-        
-      img{
-            width: 60px;
-            height: 60px;
-        }
-      }
-      .item1-logement,.item-logement ,.item2-logement, .item3-logement {
-       
-      }
-      padding: 1.5rem;
-    }
-  }
-  
-
-  @media screen and (max-width: 1120px) {
-    .style-logement {
-      display: flex;
-      flex-direction: column;
-       
-      .container-logement {
-       display: flex;
-       flex-direction: column;
-       
-       .item1-logement{
-        display: flex;
-        flex-direction: column; 
-        .host-logement{
-            display: none;
-          }
-       
-       }
-       .item2-logement{
+      .item1-logement {
         display: flex;
         flex-direction: column;
-        .etoile-logement{
+        .host-logement {
+          display: none;
+        }
+      }
+      .item2-logement {
+        display: flex;
+        flex-direction: column;
+        .etoile-logement {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          .host-logement-hidden{
+          .host-logement-hidden {
             display: flex;
-           
-            .name-host{
+            gap: 1rem;
+
+            .name-host {
               width: 55px;
             }
-        & p{
-          color: #ff6060;
-        }
-            
+            & p {
+              color: #ff6060;
+            }
           }
-         
-        
-        
         }
-       }
-       .item3-logement{
+      }
+      .item3-logement {
         display: flex;
         flex-direction: column;
-       gap: 0.5rem;
-       padding-bottom: 1rem;
-        .equipement-logement,.descreption-logement{
+        gap: 1rem;
+        padding-bottom: 1rem;
+        .equipement-logement,
+        .descreption-logement {
           width: 100%;
         }
-       
-       }
-      padding: 1rem;
       }
+      padding: 1rem;
     }
   }
+}
