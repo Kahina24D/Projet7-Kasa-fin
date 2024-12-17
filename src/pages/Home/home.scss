@@ -1,53 +1,52 @@
 :root {
-    --colorRed: #FF6060;
-    --colorWhite: #fff;
-  }
-.gallery-container {
+  --colorRed: #ff6060;
+  --colorWhite: #fff;
+}
+.home-container {
+display: flex;
+flex-direction: column;
+gap: 2rem;
+  .gallery-container {
     position: relative;
-    background-color: #F6F6F6;
-    padding: 40px 0;
-    /* Espace autour de la galerie */
+    background-color: #f6f6f6;
+  
+  
     display: flex;
     justify-content: center;
-    /* Centre la galerie horizontalement */
-    margin: 1.5rem;
+  
     border-radius: 25px;
 
     .logements-gallery {
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 50px;
-        max-width: 1200px;
-        width: 100%;
-        padding: 15px;
-
-       
-
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+      max-width: 1200px;
+      width: 100%;
+      padding: 15px;
     }
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .gallery-container {
-      padding: 20px; /* Reduced padding on mobile */
-      margin: 1rem;  /* Slightly less margin on mobile */
-    }
-  
-    .gallery-container .logements-gallery {
-      grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets and smaller screens */
-      gap: 30px; /* Smaller gap between items */
-    }
-  }
+ 
 
-  @media screen and (max-width: 480px) {
-    .gallery-container {
-      padding: 0px; /* Reduced padding on mobile */
-      margin: 0rem;  /* Slightly less margin on mobile */
-    
-    }
-  
-    .gallery-container .logements-gallery {
-      grid-template-columns: repeat(1, 1fr); /* 2 columns on tablets and smaller screens */
-      gap: 30px; /* Smaller gap between items */
-    }
+  .gallery-container .logements-gallery {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); 
+    gap: 30px; 
   }
+}
+
+@media screen and (max-width: 480px) {
+
+
+  .gallery-container .logements-gallery {
+    grid-template-columns: repeat(
+      1,
+      1fr
+    ); 
+    gap: 30px; 
+  }
+}

@@ -1,32 +1,8 @@
-header {
+
+#root{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: white;
-
-    img.logo {
-        width: 100px;
-    }
-
-    nav {
-        ul {
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            padding: 0;
-            margin: 0;
-
-            li {
-                margin: 0 10px;
-
-                a {
-                    text-decoration: none;
-                    color: #000;
-                }
-            }
-
-        }
-
-    }
+    flex-direction: column;
+    align-self: center;
+ 
+ 
 }

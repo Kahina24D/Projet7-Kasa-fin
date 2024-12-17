@@ -4,22 +4,33 @@ import Apropos from './pages/Apropos/Apropos';
 import Logement from './pages/Logement/Logement';
 import Error from './pages/Error/Error';
 import Layout from './components/Layout/Layout';
-
+import Footer from './components/Footer/Footer'; // Chemin corrigé
+import Header from './components/Header/Header'; // Chemin corrigé
+import "./App.scss";
 function App() {
-  return (
-    <Layout>
-      <Router>
-        <Routes>
-        <Route path="/" element={<Home />} /> {/* Ajoute une route par défaut pour la page d'accueil */}
-          <Route path="/home" element={<Home />} />
-          <Route path="/apropos" element={<Apropos />} />
-          <Route path="/logement/:id" element={<Logement />} />
-          <Route path="/error" element={<Error />} />
-          <Route path="*" element={<Error />} /> {/* Redirige toutes les routes non définies vers la page d'erreur */}
-        </Routes>
-      </Router>
-    </Layout>
+  return (<>
+    <div className="main-container">
+    <Router>
+      <Header />
+     
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/apropos" element={<Apropos />} />
+            <Route path="/logement/:id" element={<Logement />} />
+            <Route path="/error" element={<Error />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+        </Layout>
+     
+     
+    </Router>
+    </div>
+     <Footer />
+     </>
   );
 }
+
 
 export default App;

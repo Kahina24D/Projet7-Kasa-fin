@@ -1,24 +1,12 @@
-.apropos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-  
-    .apropos-content {
-      width: 90%;
-      max-width: 800px;
-   
-      margin: 1rem auto;
-  
-      h1 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        color: #333;
-      }
-  
-      .collapse {
-        margin-bottom: 1.5rem;
-      }
-    }
+.apropos-container{
+
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.88rem;
+  color: #FF6060;
+
+  .apropos-content{
+    margin: 0 5rem;
   }
-  
+}

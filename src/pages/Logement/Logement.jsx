@@ -1,18 +1,14 @@
-import React, { useEffect, useState } from 'react';
-// import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
+
 import Starrating from '../../components/Carrossal/Starrating';
 import './logement.scss';
 import Caroossale from '../../components/Carrossal/Caroossale';
-import Header from '../../components/Header/Header';
+
 import { useNavigate, useParams } from 'react-router-dom';
 import logements from '../../data/logements.json';
-import victorDown from '../../pages/Logement/victorDown/Victor-down.png';
-import victorUp from '../../pages/Logement/victorUp/victor-up.png';
 
-import Footer from '../../components/Footer/Footer';
+import Collapse from '../../components/Collapse/Collapse';
 function Logement() {
-  const [isExpended, setExpended] = useState(false);
-  const [isExpended1, setExpended1] = useState(false);
   const { id } = useParams();
   const navigate = useNavigate();
   const logement = logements.find((l) => l.id === id);
@@ -21,24 +17,21 @@ function Logement() {
       navigate('/error');
     }
   }, [logement, navigate]);
-  const toggleDescreption = () => {
-    setExpended(!isExpended);
-  };
-  const toggleEquipement = () => {
-    setExpended1(!isExpended1);
-  };
+
   return (
+    <>
     <div className="style-logement ">
+      
       {logement && (
         <div className="container-logement">
-          <Header />
-          <Caroossale logement={logement} style={{ margin: '30px' }} />
+         
+          <Caroossale logement={logement} />
           <div className="item1-logement">
             <div className="logementtitle">
               <h1>{logement.title}</h1>
               <p>{logement.location}</p>
             </div>
-            
+
             <div className="host-logement">
               <p className="name-host">
                 {logement.host
@@ -100,63 +93,25 @@ function Logement() {
             </div>
           </div>
           <div className="item3-logement">
-            <div className="descreption-logement">
-              <div className="descreption-header" onClick={toggleDescreption}>
-                <h1>Description</h1>
-                <img
-                  src={isExpended ? victorUp : victorDown}
-                  alt="Toggle arrow"
-                  style={{
-                    transform: isExpended ? 'rotate(180deg)' : 'rotate(180deg)',
-                  }}
-                  className="toggle-arrow"
-                />
-              </div>
-              {isExpended && (
-                <p
-                  className={`text-descreption ${isExpended ? 'expanded' : ''}`}
-                >
-                  {logement.description}
-                </p>
-              )}
-            </div>
+            <Collapse
+              title="Descreprion"
+              content={logement.description}
+            ></Collapse>
 
-            <div className="equipement-logement">
-              <div className="equipement-header" onClick={toggleEquipement}>
-                <h1>Equipements</h1>
-                <img
-                  src={isExpended1 ? victorUp : victorDown}
-                  alt="Toggle arrow"
-                  style={{
-                    transform: isExpended1
-                      ? 'rotate(180deg)'
-                      : 'rotate(180deg)',
-                  }}
-                  className="toggle-arrow"
-                />
-              </div>
-              {isExpended1 && (
-                <div className="liste-equipement">
-                  {logement.equipments && logement.equipments.length > 0 ? (
-                    logement.equipments.map((equipement, index) => (
-                      <p className="text-equipement" key={index}>
-                        {equipement}
-                      </p>
-                    ))
-                  ) : (
-                    <p>Aucun équipement disponible</p>
-                  )}
-                </div>
-              )}
-            </div>
+            <Collapse
+              title="Equipement"
+              content={logement.equipments}
+           className="liste-equipement" ></Collapse>
           </div>
         </div>
       )}
 
-      {/* {logement && ...toncode ... } */}
-      <Footer />
+     
     </div>
+   
+    </>
   );
+
 }
 
 export default Logement;
