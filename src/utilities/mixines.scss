@@ -1,0 +1,26 @@
+
+$breakpoints: (
+    small: 48rem, //768px
+    medium: 64rem, //1024px
+);
+
+//small screen
+@mixin small-screen {
+    @media screen and (max-width: map-get($breakpoints, small)){
+        @content;
+    }
+};
+
+ //medium screen
+ @mixin medium-screen {
+    @media screen and (min-width: map-get($breakpoints, small)) and (max-width: map-get($breakpoints, medium)){
+        @content;
+    }
+};
+
+//large screen
+@mixin large-screen {
+    @media screen and (min-width: map-get($breakpoints, medium)){
+        @content;
+    }
+};
