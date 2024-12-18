@@ -93,16 +93,18 @@ function Logement() {
             </div>
           </div>
           <div className="item3-logement">
-            <Collapse
-              title="Descreprion"
-              content={logement.description}
-            ></Collapse>
+  <Collapse
+    title="Description"
+    content={logement.description}
+    className="collapse"
+  />
+  <Collapse
+    title="Équipements"
+    content={logement.equipments}
+    className="collapse liste-equipement"
+  />
+</div>
 
-            <Collapse
-              title="Equipement"
-              content={logement.equipments}
-           className="liste-equipement" ></Collapse>
-          </div>
         </div>
       )}
 

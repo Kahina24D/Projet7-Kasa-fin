@@ -20,11 +20,33 @@
     .item3-logement {
       display: flex;
       justify-content: space-between;
+    
+    
+ .collapse{
+  display: block;
+  width: 40%;
+ }
+
     }
     .item2-logement {
       .etoile-logement {
         .host-logement-hidden {
           display: none;
+        }
+      }
+      .tage-logement {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap; /* Permet aux tags de passer à la ligne */
+        color: #ff6060;
+      
+        .text-tag {
+          background-color: #ff6060;
+          color: #fff;
+          border-radius: 10px;
+          text-align: center;
+          font-size: 15px;
+          padding: 5px 10px;
         }
       }
     }
@@ -54,7 +76,7 @@
       }
     }
 
-    padding: 1.5rem;
+   
   }
 }
 
@@ -97,10 +119,27 @@
       .item3-logement {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
-        padding-bottom: 1rem;
+      
+        .collapse{
+          display: block;
+          width: 100%;
+         }
       }
-      padding: 1rem;
+    
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .style-logement {
+    .container-logement {
+      .item3-logement {
+        gap: 0; /* Supprime l'espacement entre les éléments */
+        .collapse{
+          display: block;
+          width: 100%;
+         }
+        
+      }
     }
   }
 }

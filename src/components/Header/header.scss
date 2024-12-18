@@ -8,7 +8,7 @@ header {
 
 
   img.logo-header {
-    width: 100px;
+    width: 13.14513rem;
     object-fit: cover;
   }
 
@@ -34,6 +34,22 @@ header {
           text-decoration: underline;
         }
       }
+    }
+  }
+}
+@media screen and (max-width: 768px)  {
+  header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 4.25rem;
+    justify-content: space-between;
+  
+  
+  
+    img.logo-header {
+      width: 8rem;
+      object-fit: cover;
     }
   }
 }
