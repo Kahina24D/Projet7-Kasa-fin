@@ -52,12 +52,14 @@
     }
     .host-logement {
       display: flex;
-      gap: 0.5rem;
-      color: #ff6060;
+    
+    
       margin-top: 1.5rem;
-
-      .name-host {
-        width: 60px;
+      
+      p{
+        color:#ff6060;
+        width: 50%;
+     
       }
     }
     .tage-logement {
@@ -105,13 +107,11 @@
           align-items: center;
           .host-logement-hidden {
             display: flex;
-            gap: 0.8rem;
+            
 
-            .name-host {
-              width: 55px;
-            }
             & p {
-              color: #ff6060;
+              color:#ff6060;
+              width: 45%;
             }
           }
         }
